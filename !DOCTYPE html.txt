@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Tienda Streetwear</title>
+<style>
+  /* Reset básico */
+  * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+  body { background:#000; color:#fff; }
+  header { background:#111; padding:20px; text-align:center; font-size:2em; font-weight:bold; letter-spacing:2px; }
+  nav { display:flex; justify-content:center; gap:20px; padding:10px; background:#222; }
+  nav a { color:#fff; text-decoration:none; font-weight:bold; transition:0.3s; }
+  nav a:hover { color:#f90; }
+  .hero { text-align:center; padding:50px; background:url('https://images.unsplash.com/photo-1602524200282-51b99a9d5c1c') center/cover no-repeat; }
+  .hero h1 { font-size:3em; margin-bottom:20px; color:#fff; text-shadow:2px 2px #000; }
+  .products { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:40px 20px; }
+  .product { background:#111; padding:20px; width:250px; border:1px solid #333; text-align:center; transition:0.3s; }
+  .product:hover { transform:scale(1.05); border-color:#f90; }
+  .product img { width:100%; height:auto; margin-bottom:10px; }
+  .product h2 { font-size:1.2em; margin-bottom:10px; }
+  .product p { font-size:1em; margin-bottom:15px; }
+  .product button { background:#f90; border:none; padding:10px 20px; font-weight:bold; cursor:pointer; transition:0.3s; }
+  .product button:hover { background:#fff; color:#f90; }
+  footer { text-align:center; padding:20px; background:#111; margin-top:40px; font-size:0.9em; color:#aaa; }
+</style>
+</head>
+<body>
+
+<header>Mi Tienda Streetwear</header>
+
+<nav>
+  <a href="#hero">Inicio</a>
+  <a href="#products">Productos</a>
+  <a href="#contact">Contacto</a>
+</nav>
+
+<section class="hero" id="hero">
+  <h1>Streetwear Collection 2025</h1>
+</section>
+
+<section class="products" id="products">
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1602524200282-51b99a9d5c1c" alt="Producto 1">
+    <h2>Camiseta Negra</h2>
+    <p>Estilo urbano, algodón premium.</p>
+    <button>Comprar</button>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1618354699756-3bde507845f2" alt="Producto 2">
+    <h2>Sudadera Street</h2>
+    <p>Con capucha, diseño exclusivo.</p>
+    <button>Comprar</button>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1618354699756-3bde507845f2" alt="Producto 3">
+    <h2>Gorra Snapback</h2>
+    <p>Comodidad y estilo en todos los colores.</p>
+    <button>Comprar</button>
+  </div>
+</section>
+
+<footer id="contact">
+  © 2025 Mi Tienda Streetwear. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
