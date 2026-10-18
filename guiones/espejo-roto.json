@@ -1,11 +1,11 @@
 [
  {
   "who": "gris",
-  "text": "Si un espejo se rompiera, lo guardarías?"
+  "text": "Si tu espejo se rompiera, lo guardarías?"
  },
  {
   "who": "palido",
-  "text": "Lo tiraría."
+  "text": "No, lo tiraría."
  },
  {
   "who": "gris",
@@ -13,27 +13,26 @@
  },
  {
   "who": "palido",
-  "text": "Prefiero no verme que verme partido."
+  "text": "Prefiero no verme a verme roto."
  },
  {
   "who": "gris",
-  "text": "Y si fuera un regalo de alguien que quieres?"
+  "text": "Y si te lo regaló alguien importante?"
  },
  {
   "who": "palido",
-  "text": "Guardaría el recuerdo, no el cristal."
+  "text": "Guardaría el recuerdo, no los pedazos."
  },
  {
   "who": "gris",
-  "text": "Entonces, tirar algo es olvidarlo?"
+  "text": "Entonces, soltar algo es olvidarlo?"
  },
  {
   "who": "palido",
-  "text": "No. Es dejar de cortarme con él."
+  "text": "No. Es dejar de lastimarme con eso."
  },
  {
   "who": "final",
-  "text": "Y tú, qué sigues guardando?",
-  "text2": "Ah..."
+  "text": "A veces en la vida nos aferramos a pedazos rotos porque nos recuerdan algo bonito. Pero soltarlos no borra el recuerdo, solo deja de hacerte daño."
  }
 ]

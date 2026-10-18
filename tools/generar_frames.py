@@ -43,6 +43,13 @@ def frame(who, text, text2, base):
         block(d, text, int(W * 0.055), m, int(H * 0.06), W - 2 * m, "left")
     elif who == "palido":
         block(d, text, int(W * 0.048), W - m, int(H * 0.08), int(W * 0.68), "right")
+    elif not text2:
+        # cierre: explicación centrada debajo de los dos personajes
+        font = ImageFont.truetype(FONT, int(W * 0.043))
+        y = int(H * 0.76)
+        for line in wrap(d, text, font, int(W * 0.84)):
+            d.text(((W - d.textlength(line, font=font)) / 2, y), line, font=font, fill="white")
+            y += int(W * 0.043 * 1.4)
     else:
         y = block(d, text, int(W * 0.055), m, int(H * 0.04), W - 2 * m, "left")
         block(d, text2, int(W * 0.048), W - m, y + int(H * 0.015), int(W * 0.68), "right")
