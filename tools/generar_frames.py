@@ -25,9 +25,13 @@ def wrap(draw, text, font, max_w):
     return lines + [cur]
 
 
-def block(draw, text, size, x, y, max_w, align):
+def block(draw, text, size, x, y, max_w, align, bottom=None):
+    """Si se da `bottom`, el bloque se alinea para terminar en esa y."""
     font = ImageFont.truetype(FONT, size)
-    for line in wrap(draw, f"“{text}”", font, max_w):
+    lines = wrap(draw, f"“{text}”", font, max_w)
+    if bottom is not None:
+        y = bottom - int(size * 1.25) * len(lines)
+    for line in lines:
         w = draw.textlength(line, font=font)
         draw.text((x if align == "left" else x - w, y), line, font=font, fill="white")
         y += int(size * 1.25)
@@ -40,15 +44,14 @@ def frame(who, text, text2, base):
     W, H = img.size
     m = int(W * 0.08)
     if who == "gris":
-        block(d, text, int(W * 0.055), m, int(H * 0.06), W - 2 * m, "left")
+        block(d, text, int(W * 0.055), m, 0, W - 2 * m, "left", bottom=int(H * 0.255))
     elif who == "palido":
-        block(d, text, int(W * 0.048), W - m, int(H * 0.08), int(W * 0.68), "right")
+        block(d, text, int(W * 0.048), W - m, 0, int(W * 0.68), "right", bottom=int(H * 0.265))
     elif not text2:
-        # cierre: explicación centrada, justo encima de la cabeza de los personajes
+        # cierre: explicación centrada, debajo de los dos personajes
         font = ImageFont.truetype(FONT, int(W * 0.043))
-        lines = wrap(d, text, font, int(W * 0.84))
-        y = int(H * 0.185) - int(W * 0.043 * 1.4) * len(lines)
-        for line in lines:
+        y = int(H * 0.76)
+        for line in wrap(d, text, font, int(W * 0.84)):
             d.text(((W - d.textlength(line, font=font)) / 2, y), line, font=font, fill="white")
             y += int(W * 0.043 * 1.4)
     else:
