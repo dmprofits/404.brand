@@ -1,0 +1,47 @@
+[
+ {
+  "who": "gris",
+  "text": "Si dejaras una puerta abierta toda la noche, qué pensarías?"
+ },
+ {
+  "who": "palido",
+  "text": "Que quiero que alguien entre."
+ },
+ {
+  "who": "gris",
+  "text": "Y si quien entra no es quien esperas?"
+ },
+ {
+  "who": "palido",
+  "text": "Entonces tendría que decidir si lo dejo quedarse."
+ },
+ {
+  "who": "gris",
+  "text": "Y si te dijera que se va a quedar para siempre?"
+ },
+ {
+  "who": "palido",
+  "text": "Lo dejaría solo si yo lo quiero."
+ },
+ {
+  "who": "gris",
+  "text": "Aunque ya hayas esperado años a otra persona?"
+ },
+ {
+  "who": "palido",
+  "text": "Esperar no le da derecho a nadie."
+ },
+ {
+  "who": "gris",
+  "text": "Entonces, deberías cerrar la puerta?"
+ },
+ {
+  "who": "palido",
+  "text": "No. Pero decidiría quién entra."
+ },
+ {
+  "who": "final",
+  "text": "Cerrarla no te protege...",
+  "text2": "Ah..."
+ }
+]

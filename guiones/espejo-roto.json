@@ -1,0 +1,39 @@
+[
+ {
+  "who": "gris",
+  "text": "Si un espejo se rompiera, lo guardarías?"
+ },
+ {
+  "who": "palido",
+  "text": "Lo tiraría."
+ },
+ {
+  "who": "gris",
+  "text": "Aunque fuera el único que tienes?"
+ },
+ {
+  "who": "palido",
+  "text": "Prefiero no verme que verme partido."
+ },
+ {
+  "who": "gris",
+  "text": "Y si fuera un regalo de alguien que quieres?"
+ },
+ {
+  "who": "palido",
+  "text": "Guardaría el recuerdo, no el cristal."
+ },
+ {
+  "who": "gris",
+  "text": "Entonces, tirar algo es olvidarlo?"
+ },
+ {
+  "who": "palido",
+  "text": "No. Es dejar de cortarme con él."
+ },
+ {
+  "who": "final",
+  "text": "Y tú, qué sigues guardando?",
+  "text2": "Ah..."
+ }
+]
